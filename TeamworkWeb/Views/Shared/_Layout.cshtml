@@ -1,0 +1,89 @@
+﻿    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - TeamworkWeb</title>
+
+        <environment include="Development">
+            @*<link rel="stylesheet" href="~/css/site.css" />*@
+        </environment>
+        <environment exclude="Development">
+            <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+                  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.css"
+                  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+            <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        </environment>
+
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/style.css" />
+        <link rel="stylesheet" href="~/css/index-style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav-border">
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                <span class="navbar-brand mb-0 h1">
+                    <img src="~/images/logo/logo.png" class="logo logo-img">
+                    <span class="font">TEAMWORK</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse topnav-right  nav-right" id="navbarText">
+                <ul class="navbar-nav mr-auto" id="menu">
+                    <li class="nav-item active" id="nav">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item dropdown" id="nav">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Project
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="nav-link" href="#">Create Project</a>
+                            <a class="nav-link" href="#">My Project</a>
+                        </div>
+                    </li>
+                    <li class="nav-item" id="naV">
+                        <a class="nav-link" href="#">Q&A</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            @RenderBody()
+            <div class="footer">
+                <p class="font-footer">&#9400; G-ABLE Community</p>
+            </div>
+        </div>
+
+        <environment include="Development">
+            <script src="~/lib/jquery/dist/jquery.js"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="~/js/site.js" asp-append-version="true"></script>
+        </environment>
+        <environment exclude="Development">
+            <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                    asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                    asp-fallback-test="window.jQuery"
+                    crossorigin="anonymous"
+                    integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+            </script>
+            <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                    asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                    asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                    crossorigin="anonymous"
+                    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+            </script>
+            <script src="~/js/site.min.js" asp-append-version="true"></script>
+        </environment>
+
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        @RenderSection("Scripts", required: false)
+    </body>
+    </html>

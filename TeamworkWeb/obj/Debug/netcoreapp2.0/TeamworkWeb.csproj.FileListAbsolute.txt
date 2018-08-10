@@ -1,0 +1,11 @@
+D:\TeamworkWeb\TeamworkWeb\bin\Debug\netcoreapp2.0\TeamworkWeb.deps.json
+D:\TeamworkWeb\TeamworkWeb\bin\Debug\netcoreapp2.0\TeamworkWeb.runtimeconfig.json
+D:\TeamworkWeb\TeamworkWeb\bin\Debug\netcoreapp2.0\TeamworkWeb.runtimeconfig.dev.json
+D:\TeamworkWeb\TeamworkWeb\bin\Debug\netcoreapp2.0\TeamworkWeb.dll
+D:\TeamworkWeb\TeamworkWeb\bin\Debug\netcoreapp2.0\TeamworkWeb.pdb
+D:\TeamworkWeb\TeamworkWeb\obj\Debug\netcoreapp2.0\TeamworkWeb.csprojAssemblyReference.cache
+D:\TeamworkWeb\TeamworkWeb\obj\Debug\netcoreapp2.0\TeamworkWeb.csproj.CoreCompileInputs.cache
+D:\TeamworkWeb\TeamworkWeb\obj\Debug\netcoreapp2.0\TeamworkWeb.AssemblyInfoInputs.cache
+D:\TeamworkWeb\TeamworkWeb\obj\Debug\netcoreapp2.0\TeamworkWeb.AssemblyInfo.cs
+D:\TeamworkWeb\TeamworkWeb\obj\Debug\netcoreapp2.0\TeamworkWeb.dll
+D:\TeamworkWeb\TeamworkWeb\obj\Debug\netcoreapp2.0\TeamworkWeb.pdb
